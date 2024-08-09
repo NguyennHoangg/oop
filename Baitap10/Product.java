@@ -1,44 +1,26 @@
 package Baitap10;
 
 public class Product {
-    private String description;
-    private String productID;
-    private double price;  
+	private String name;
+	private String code;
+	private double price;
 
-    public Product(String description, String productID, double price) {
-        this.description = description;
-        this.productID = productID;
-        this.price = price;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getProductID() {
-        return productID;
-    }
-
-    public void setProductID(String productID) {
-        this.productID = productID;
-    }
+	public Product(String name, String code, double price) {
+		this.name = name;
+		this.code = code;
+		this.price = price;
+	}
 
     public double getPrice() {
         return price;
-    }
+    }   
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    @Override
-    public String toString() {
-        return "Product [description=" + description + ", productID=" + productID + ", price=" + price + "]";
-    }
-
-    
+	@Override
+	public String toString() {
+		return "Product{" +
+				"name='" + name + '\'' +
+				", code='" + code + '\'' +
+				", price=" + price +
+				'}';
+	}
 }
